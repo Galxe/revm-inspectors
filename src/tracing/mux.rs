@@ -252,7 +252,8 @@ impl DelegatingInspector {
                     .into_mux_config()?;
 
                 Ok(DelegatingInspector::Mux(MuxInspector::try_from_config(config)?))
-            }
+            },
+            _ => todo!()
         };
 
         inspector.map(|inspector| (tracer_type, inspector))
