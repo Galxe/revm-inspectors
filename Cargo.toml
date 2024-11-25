@@ -33,7 +33,7 @@ clippy.lint_groups_priority = "allow"
 alloy-sol-types = "0.8"
 alloy-primitives = "0.8"
 alloy-rpc-types = { version = "0.3", features = ["eth", "trace"] }
-revm = { package = "revm", git = "https://github.com/galxe/revm", rev = "875f5ad", default-features = false, features = ["std"] }
+revm = { package = "revm", git = "https://github.com/galxe/revm", rev = "20b5883", default-features = false, features = ["std"] }
 
 anstyle = "1.0"
 colorchoice = "1.0"

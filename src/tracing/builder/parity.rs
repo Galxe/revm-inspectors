@@ -172,7 +172,7 @@ impl ParityTraceBuilder {
         trace_types: &HashSet<TraceType>,
         db: DB,
     ) -> Result<TraceResults, DB::Error> {
-        let ResultAndState { ref result, ref state } = res;
+        let ResultAndState { ref result, ref state, .. } = res;
 
         let breadth_first_addresses = if trace_types.contains(&TraceType::VmTrace) {
             CallTraceNodeWalkerBF::new(&self.nodes)
