@@ -34,7 +34,7 @@ alloy-rpc-types-eth = "0.3"
 alloy-rpc-types-trace = "0.3"
 alloy-sol-types = "0.8"
 alloy-primitives = "0.8"
-revm = { package = "revm", git = "https://github.com/galxe/revm", rev = "20b5883", default-features = false, features = ["std"] }
+revm = { package = "revm", git = "https://github.com/galxe/revm", rev = "a32cd92", default-features = false, features = ["std"] }
 
 anstyle = "1.0"
 colorchoice = "1.0"
