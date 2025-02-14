@@ -266,7 +266,7 @@ impl JsInspector {
         DB: DatabaseRef,
         <DB as DatabaseRef>::Error: core::fmt::Display,
     {
-        let ResultAndState { result, state } = res;
+        let ResultAndState { result, state, .. } = res;
         let (db, _db_guard) = EvmDbRef::new(&state, db);
 
         let gas_used = result.tx_gas_used();
