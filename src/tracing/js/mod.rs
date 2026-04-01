@@ -307,7 +307,7 @@ impl JsInspector {
         DB: DatabaseRef,
         <DB as DatabaseRef>::Error: core::fmt::Display,
     {
-        let ResultAndState { result, state } = res;
+        let ResultAndState { result, state, .. } = res;
         let mut db = WrapDatabaseRef(db);
         let (db, _db_guard) = EvmDbRef::new(&state, &mut db);
 

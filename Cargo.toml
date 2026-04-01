@@ -72,3 +72,18 @@ std = [
 ]
 serde = ["dep:serde", "revm/serde"]
 js-tracer = ["dep:boa_engine", "dep:boa_gc"]
+
+[patch.crates-io]
+# gravity-forked revm
+revm = { path = "/home/neko/gravity/revm/crates/revm" }
+revm-bytecode = { path = "/home/neko/gravity/revm/crates/bytecode" }
+revm-context = { path = "/home/neko/gravity/revm/crates/context" }
+revm-context-interface = { path = "/home/neko/gravity/revm/crates/context/interface" }
+revm-database = { path = "/home/neko/gravity/revm/crates/database" }
+revm-database-interface = { path = "/home/neko/gravity/revm/crates/database/interface" }
+revm-handler = { path = "/home/neko/gravity/revm/crates/handler" }
+revm-inspector = { path = "/home/neko/gravity/revm/crates/inspector" }
+revm-interpreter = { path = "/home/neko/gravity/revm/crates/interpreter" }
+revm-precompile = { path = "/home/neko/gravity/revm/crates/precompile" }
+revm-primitives = { path = "/home/neko/gravity/revm/crates/primitives" }
+revm-state = { path = "/home/neko/gravity/revm/crates/state" }
