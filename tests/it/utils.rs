@@ -57,7 +57,7 @@ pub fn deploy_contract<DB: Database + DatabaseCommit>(
     evm.modify_tx(|tx| {
         tx.nonce += 1;
     });
-    out
+    out.result
 }
 
 /// Deploys a contract with the given code and deployer address.
@@ -82,5 +82,5 @@ pub fn inspect_deploy_contract<DB: Database + DatabaseCommit, INSP: Inspector<Co
     evm.ctx().modify_tx(|tx| {
         tx.nonce += 1;
     });
-    output
+    output.result
 }
